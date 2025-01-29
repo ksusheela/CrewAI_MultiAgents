@@ -74,7 +74,7 @@ write_task = Task(
     tools=[search_tool],
     agent=writer,
     async_execution=False,
-    output_file="Multi_Agent_OpenAI_Operator.md",
+    output_file="Langchain_components.md",
 )
 
 
@@ -86,5 +86,5 @@ crew = Crew(
 )
 
 # Starting the task execution process with enhanced feedback
-result = crew.kickoff(inputs={'topic': 'OpenAI Operator in AgenticAI'})
+result = crew.kickoff(inputs={'topic': 'write a blog on langchain components and uses and usecases'})
 print(result)
