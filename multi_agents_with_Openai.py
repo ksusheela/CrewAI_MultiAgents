@@ -74,7 +74,7 @@ write_task = Task(
     tools=[search_tool],
     agent=writer,
     async_execution=False,
-    output_file="Langchain_components.md",
+    output_file="Deepseek_1.md",
 )
 
 
@@ -86,5 +86,5 @@ crew = Crew(
 )
 
 # Starting the task execution process with enhanced feedback
-result = crew.kickoff(inputs={'topic': 'write a blog on langchain components and uses and usecases'})
+result = crew.kickoff(inputs={'topic': 'write a blog on Deepseek '})
 print(result)
